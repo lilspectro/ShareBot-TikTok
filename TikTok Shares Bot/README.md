@@ -1,23 +1,41 @@
-```txt 
-  /$$$$$$  /$$                                           /$$$$$$$              /$$    
- /$$__  $$| $$                                          | $$__  $$            | $$    
-| $$  \__/| $$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$       | $$  \ $$  /$$$$$$  /$$$$$$  
-|  $$$$$$ | $$__  $$ |____  $$ /$$__  $$ /$$__  $$      | $$$$$$$  /$$__  $$|_  $$_/  
- \____  $$| $$  \ $$  /$$$$$$$| $$  \__/| $$$$$$$$      | $$__  $$| $$  \ $$  | $$    
- /$$  \ $$| $$  | $$ /$$__  $$| $$      | $$_____/      | $$  \ $$| $$  | $$  | $$ /$$
-|  $$$$$$/| $$  | $$|  $$$$$$$| $$      |  $$$$$$$      | $$$$$$$/|  $$$$$$/  |  $$$$/
- \______/ |__/  |__/ \_______/|__/       \_______/      |_______/  \______/    \___/  
+# Gravity Staircase Animation
 
- ```
+Ce dépôt contient une petite animation interactive écrite avec [pygame](https://www.pygame.org/)
+qui simule la chute d'une balle sur un escalier infini qui descend progressivement.
 
- # Share Bot #
- **The share bot is not finish**
+## Prérequis
 
-[!]Github all releases >>> https://github.com/XeldraEU/Xeldra.EU-ShareBot-TikTok.git
+- Python 3.10 ou version ultérieure
+- Pygame
 
-[!]Share Bot 
-Share bot : 
+Installez la dépendance principale avec pip :
 
-Allows you to generate a lot of sharing on a tiktok video thanks to its URL, I want to specify that its does not work all the time as the program is not yet developed. I want to say that you have risks of banishment /!\.
+```bash
+pip install pygame
+```
 
-##  Please respect the work and do not abuse the tool. ##
+## Lancer l'animation
+
+Exécutez simplement le script suivant :
+
+```bash
+python gravity_animation.py
+```
+
+Une fenêtre s'ouvre et affiche :
+
+- Une série de marches générées à l'infini vers le bas
+- Une balle qui avance horizontalement, subit la gravité et rebondit légèrement
+- Un léger suivi de caméra qui permet d'observer la descente sans fin
+
+Fermez la fenêtre (ou appuyez sur la croix) pour quitter l'animation.
+
+## Structure du projet
+
+- `gravity_animation.py` : script principal de l'animation
+- `main.py` : code legacy du projet original (ancien bot TikTok)
+- `setup.py` : métadonnées d'installation héritées
+
+## License
+
+Le code source est distribué sans garantie. Utilisez-le, modifiez-le et partagez-le librement.
